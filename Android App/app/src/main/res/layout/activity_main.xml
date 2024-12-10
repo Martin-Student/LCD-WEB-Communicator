@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Logo Image -->
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/esp_adress"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Address Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="Enter ESP32 Address:" />
+
+        <!-- Address Input -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Address (e.g., https://esp32lcd.com)"
+            android:textColor="@color/white"
+            android:textColorHint="#a0a0a0"
+            android:textSize="16dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="16dp"
+            android:inputType="text"
+            android:id="@+id/esp32_adress_input" />
+
+        <!-- Connect Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Connect"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:layout_marginTop="32dp"
+            android:textSize="18dp"
+            android:id="@+id/connect_btn" />
+
+        <!-- GitHub Logo -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="48dp"
+            android:gravity="center">
+
+            <!-- Source Code Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Source Code"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginBottom="8dp"
+                android:gravity="center" />
+
+            <!-- GitHub Logo -->
+            <ImageView
+                android:id="@+id/github_logo"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:src="@drawable/github_logo" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Version Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version 1.0"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>

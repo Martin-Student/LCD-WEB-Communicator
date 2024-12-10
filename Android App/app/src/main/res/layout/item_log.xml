@@ -1,0 +1,39 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/white">
+
+    <!-- Autor wiadomości -->
+    <TextView
+        android:id="@+id/authorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Autor"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_gravity="start"
+        android:padding="4dp"/>
+
+    <!-- Treść wiadomości (dymek) -->
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Treść wiadomości"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:layout_gravity="start"
+        android:maxWidth="300dp"/>
+
+    <!-- Kreska oddzielająca wiadomości -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray" />
+</LinearLayout>

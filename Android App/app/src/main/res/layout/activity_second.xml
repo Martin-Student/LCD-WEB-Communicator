@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".SecondActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Logo Image -->
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/esp_msg"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Author Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="Author:" />
+
+        <!-- Author Input -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the author of the message here"
+            android:textColor="@color/white"
+            android:textColorHint="#a0a0a0"
+            android:textSize="16dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="16dp"
+            android:inputType="text"
+            android:id="@+id/author_input"/>
+
+        <!-- Message Label -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:text="Message to send:" />
+
+        <!-- Message Input -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your message here"
+            android:textColor="@color/white"
+            android:textColorHint="#a0a0a0"
+            android:textSize="16dp"
+            android:background="@drawable/rounded_corner"
+            android:padding="16dp"
+            android:inputType="text"
+            android:id="@+id/msg_input" />
+
+        <!-- Send Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Message"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:layout_marginTop="32dp"
+            android:textSize="18dp"
+            android:id="@+id/message_btn" />
+
+        <!-- MsgLog Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Messages Log"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:layout_marginTop="32dp"
+            android:textSize="18dp"
+            android:id="@+id/msg_log_btn" />
+
+        <!-- Back Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BACK"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:textSize="18dp"
+            android:id="@+id/back_btn" />
+
+    </LinearLayout>
+</RelativeLayout>
