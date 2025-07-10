@@ -15,6 +15,10 @@ pitches.h – Tone definitions for the buzzer
 Features:
 Wi-Fi Connection: The ESP32 connects to a Wi-Fi network and displays the connection status on the LCD.
 
+Images:
+![Full device](images/outside.jpg)
+![Inside](images/inside.jpg)
+
 Button Control:
 
 Button 1 (PIN 4) – Switches between "silent" and "loud" modes, controlling the buzzer.
